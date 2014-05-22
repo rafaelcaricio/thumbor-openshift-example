@@ -1,3 +1,4 @@
 thumbor==4.1.3
 https://github.com/willtrking/thumbor_aws/archive/master.zip
 boto
+dateutil

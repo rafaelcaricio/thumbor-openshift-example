@@ -1,10 +1,10 @@
 from setuptools import setup
 
-setup(name='YourAppName',
+setup(name='Thumbor',
       version='1.0',
       description='OpenShift App',
-      author='Your Name',
-      author_email='example@example.com',
+      author='Rafael Caricio',
+      author_email='rafael@caricio.com',
       url='http://www.python.org/sigs/distutils-sig/',
 #      install_requires=['Django>=1.3'],
      )

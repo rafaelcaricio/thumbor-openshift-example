@@ -1,2 +1,2 @@
 #!/bin/bash
-nohup thumbor -i ${OPENSHIFT_INTERNAL_IP} -p ${OPENSHIFT_INTERNAL_PORT} -c ${OPENSHIFT_REPO_DIR}thumbor.conf > ${OPENSHIFT_DIY_LOG_DIR}thumbor.log 2>&1 &
+nohup $OPENSHIFT_DATA_DIR/bin/thumbor -i ${OPENSHIFT_INTERNAL_IP} -p ${OPENSHIFT_INTERNAL_PORT} -c ${OPENSHIFT_REPO_DIR}thumbor.conf > ${OPENSHIFT_DIY_LOG_DIR}thumbor.log 2>&1 &

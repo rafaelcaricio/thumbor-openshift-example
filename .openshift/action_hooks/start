@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup thumbor -c ${OPENSHIFT_REPO_DIR}/thumbor.conf > ${OPENSHIFT_DIY_LOG_DIR}/thumbor.log 2>&1 &

@@ -1,4 +1,2 @@
 #!/bin/bash
-export PYTHON_EGG_CACHE=${OPENSHIFT_REPO_DIR}misc/virtenv/lib/python2.7/site-packages/
-source ${OPENSHIFT_REPO_DIR}misc/virtenv/activate
-nohup ${OPENSHIFT_REPO_DIR}misc/virtenv/lib/python2.7/site-packages/thumbor/thumbor.py -i ${OPENSHIFT_INTERNAL_IP} -p ${OPENSHIFT_INTERNAL_PORT} -c ${OPENSHIFT_REPO_DIR}thumbor.conf > ${OPENSHIFT_DIY_LOG_DIR}thumbor.log 2>&1 &
+nohup thumbor -i ${OPENSHIFT_INTERNAL_IP} -p ${OPENSHIFT_INTERNAL_PORT} -c ${OPENSHIFT_REPO_DIR}thumbor.conf > ${OPENSHIFT_DIY_LOG_DIR}thumbor.log 2>&1 &

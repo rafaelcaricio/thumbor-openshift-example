@@ -1,2 +1,2 @@
 thumbor==4.1.3
-thumbor_aws
+https://github.com/willtrking/thumbor_aws/archive/master.zip

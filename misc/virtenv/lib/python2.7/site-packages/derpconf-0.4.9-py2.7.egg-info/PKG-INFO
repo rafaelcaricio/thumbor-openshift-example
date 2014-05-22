@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: derpconf
+Version: 0.4.9
+Summary: derpconf abstracts loading configuration files for your app
+Home-page: https://github.com/globocom/derpconf
+Author: globo.com
+Author-email: timehome@corp.globo.com
+License: MIT
+Description: 
+                    derpconf abstracts loading configuration files for your app.
+                
+Keywords: configuration
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.6

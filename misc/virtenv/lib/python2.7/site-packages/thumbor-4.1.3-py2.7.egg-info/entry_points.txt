@@ -1,0 +1,5 @@
+[console_scripts]
+thumbor = thumbor.server:main
+thumbor-config = thumbor.config:generate_config
+thumbor-url = thumbor.url_composer:main
+

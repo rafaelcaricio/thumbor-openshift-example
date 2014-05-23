@@ -1,2 +1,0 @@
-#!/bin/bash
-cat .env | xargs -n 1 rhc env set -a thumbor

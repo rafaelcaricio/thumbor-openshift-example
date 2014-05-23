@@ -22,13 +22,13 @@ Then you can login in your account and follow the setup steps using the command:
 Creating the environment
 ------------------------
 
-Now you will need to create a application in your account at OpenShift. You will use this project as base code for your environment. We will use the application named `thumbor-example` in this tutorial.
+Now you will need to create a application in your account at OpenShift. You will use this project as base code for your environment. We will use the application named `thumborservice` in this tutorial.
 
 ```
-rhc create-app thumbor-example -t diy-0.1 --from-code=https://github.com/rafaelcaricio/thumbor-openshift-example
+rhc create-app thumborservice -t diy-0.1 --from-code=https://github.com/rafaelcaricio/thumbor-openshift-example
 ```
 
-After running this command it will automatically clone the project in your current directory. You can check if your application is working accessing `http://thumbor-example-{your namespace}.rhcloud.com`.
+After running this command it will automatically clone the project in your current directory. You can check if your application is working accessing `http://thumborservice-{your namespace}.rhcloud.com`.
 
 Installing Python
 ------------------------
@@ -36,7 +36,7 @@ Installing Python
 Since we are using an empty environment to deploy our thumbor server. We will need to install the python interpreter manually. First we will need to log in our server via ssh to configure the Python 2.7 release.
 
 ```
-rhc ssh thumbor-example
+rhc ssh thumborservice
 ```
 
 At this point you should be logged in your application server. We will build everything in the tmp/ directory.
@@ -120,15 +120,15 @@ cd $OPENSHIFT_TMP_DIR
 Download and install setuptools:
 
 ```
-wget http://pypi.python.org/packages/source/p/pip/pip-1.1.tar.gz
+wget http://pypi.python.org/packages/source/p/pip/pip-1.5.6.tar.gz
 ```
 
 ```
-tar zxf pip-1.1.tar.gz
+tar zxf pip-1.5.6.tar.gz
 ```
 
 ```
-cd pip-1.1
+cd pip-1.5.6
 ```
 
 Install:
@@ -136,3 +136,4 @@ Install:
 ```
 $OPENSHIFT_DATA_DIR/bin/python setup.py install
 ```
+

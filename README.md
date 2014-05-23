@@ -137,3 +137,46 @@ Install:
 $OPENSHIFT_DATA_DIR/bin/python setup.py install
 ```
 
+Deployment
+----------
+
+First you will need to configure your environment variables to use your own Amazon S3 credentials. You can just copy the ``.env-example`` file and then modify it to use your own configuration.
+
+```
+cp .env-example .env
+```
+
+Then you will have the ``.env`` file with the following content:
+
+```
+AWS_ACCESS_KEY=xxx
+AWS_SECRET_KEY=yyy
+RESULT_STORAGE_BUCKET=kkk
+STORAGE_BUCKET=zzz
+```
+
+Substitute the values to reflect the Amazon configurations. Then push the values to the ``thumborservice`` app using:
+
+```
+cat .env | xargs -n 1 rhc env set -a thumborservice
+```
+
+Then after that all you need is to deploy your application. Since we did not needed to change anything in the project to make it work, we just do an empty commit and push the server.
+
+```
+git commit --allow-empty -m "Deploy"
+```
+
+Start the deployment:
+
+```
+git push
+```
+
+You should see in your console the installation of the dependencies like the Thumbor itself. To check if everything worked like expected, you can start using your own instance of thumbor going to:
+
+```
+http://thumborservice-rafaelcaricio.rhcloud.com/unsafe/100x100/http://i.imgur.com/Iwyd86K.jpg
+```
+
+Congratulations, you have your Thumbor up and running. It's extremly recommended to you to take a look at the Thumbor [configuration variables](https://github.com/thumbor/thumbor/wiki/Configuration) and change the ``thumbor.conf`` to fit better your needs.

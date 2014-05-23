@@ -91,15 +91,15 @@ cd $OPENSHIFT_TMP_DIR
 Download and install setuptools:
 
 ```
-wget http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz
+wget http://pypi.python.org/packages/source/s/setuptools/setuptools-3.6.tar.gz
 ```
 
 ```
-tar zxf setuptools-0.6c11.tar.gz
+tar zxf setuptools-3.6.tar.gz
 ```
 
 ```
-cd setuptools-0.6c11
+cd setuptools-3.6
 ```
 
 Install:

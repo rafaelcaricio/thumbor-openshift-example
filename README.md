@@ -176,7 +176,7 @@ git push
 You should see in your console the installation of the dependencies like the Thumbor itself. To check if everything worked like expected, you can start using your own instance of thumbor going to:
 
 ```
-http://thumborservice-rafaelcaricio.rhcloud.com/unsafe/100x100/http://i.imgur.com/Iwyd86K.jpg
+http://thumborservice-{your namespace}.rhcloud.com/unsafe/100x100/http://i.imgur.com/Iwyd86K.jpg
 ```
 
 Congratulations, you have your Thumbor up and running. It's extremly recommended to you to take a look at the Thumbor [configuration variables](https://github.com/thumbor/thumbor/wiki/Configuration) and change the ``thumbor.conf`` to fit better your needs.
